@@ -57,12 +57,22 @@ After execution, the system will automatically restart, and the display screen w
 ``` sudo apt-get install realvnc-vnc-server ``` <br>
  ``` sudo raspi-config ``` <br>
 
-active vnc option in Interfacing Options
+active vnc option in Interfacing Options reboot then log with the vnc viewer
 
-6.) Install Tinker
+6.) Install Tinker && test 
 ====================================================
+
+``` sudo apt-get install python-tk ``` <br>
 ``` sudo apt-get install python-tk ``` <br>
 
+on vnc in the terminal put 
 
+``` sudo python lcd.py ``` <br>
+
+now add to boot
+
+sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
+
+@/usr/bin/python /home/pi/master-gui/lcd.py
 
 # master-gui
