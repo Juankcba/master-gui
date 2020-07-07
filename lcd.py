@@ -150,10 +150,10 @@ def mute_E():
 
 
 
-mutePhoto = PhotoImage(file='/home/pi/mute.png')
-volumePhoto = PhotoImage(file='/home/pi/volume.png')
-headPhoto = PhotoImage(file='/home/pi/headset.png')
-speakerPhoto = PhotoImage(file='/home/pi/speaker.png')
+mutePhoto = PhotoImage(file='/home/pi/master-gui/mute.png')
+volumePhoto = PhotoImage(file='/home/pi/master-gui/volume.png')
+headPhoto = PhotoImage(file='/home/pi/master-gui/headset.png')
+speakerPhoto = PhotoImage(file='/home/pi/master-gui/speaker.png')
 Label1 = Label(root, text="MST U",bg="white",font=helv36)
 Label2 = Label(root, text="EST 1",bg="white",font=helv36)
 Label3 = Label(root, text="EST 2",bg="white",font=helv36)
