@@ -43,7 +43,7 @@ root.attributes('-fullscreen',True)
 root.configure(bg='white')
 
 # adding image (remember image should be PNG and not JPG) 
-img = PhotoImage(file = r"/home/pi/Tmp/Tmp/image2.png") 
+img = PhotoImage(file = r"/home/pi/master-gui/image2.png") 
 img1 = img.subsample(1, 1) 
   
 #root.rowconfigure(1, weight=1)  # make buttons stretch when
