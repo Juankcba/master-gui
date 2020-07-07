@@ -73,7 +73,7 @@ def mute_A():
 #        mixer.music.set_volume(0.7)
         btn2.configure(image=volumePhoto)
 	btn2.configure(style="green.TButton")
-        GPIO.output(txA, True)
+        GPIO.output(txA, False)
 
 #        scale.set(70)
         mutedA = FALSE
@@ -81,7 +81,7 @@ def mute_A():
 #        mixer.music.set_volume(0)
         btn2.configure(image=mutePhoto)	
         btn2.configure(style="red.TButton")
-        GPIO.output(txA, False)  
+        GPIO.output(txA, True)  
 #        scale.set(0)
         mutedA = TRUE
 
@@ -91,14 +91,14 @@ def mute_B():
 #        mixer.music.set_volume(0.7)
         btn3.configure(image=volumePhoto)
 	btn3.configure(style="green.TButton")	
-        GPIO.output(txB, True)
+        GPIO.output(txB, False)
 #        scale.set(70)
         mutedB = FALSE
     else:  # mute the music
 #        mixer.music.set_volume(0)
         btn3.configure(image=mutePhoto)
         btn3.configure(style="red.TButton")
-        GPIO.output(txB, False) 
+        GPIO.output(txB, True) 
 #        scale.set(0)
         mutedB = TRUE
 
@@ -108,14 +108,14 @@ def mute_C():
 #        mixer.music.set_volume(0.7)
         btn4.configure(image=volumePhoto)
 	btn4.configure(style="green.TButton")
-        GPIO.output(txC, True)  
+        GPIO.output(txC, False)  
 #        scale.set(70)
         mutedC = FALSE
     else:  # mute the music
 #        mixer.music.set_volume(0)
         btn4.configure(image=mutePhoto)
         btn4.configure(style="red.TButton")
-        GPIO.output(txC, False) 
+        GPIO.output(txC, True) 
 #        scale.set(0)
         mutedC = TRUE
 
@@ -126,13 +126,13 @@ def mute_D():
         btn5.configure(image=volumePhoto)
 #        scale.set(70)
 	btn5.configure(style="green.TButton")
-        GPIO.output(txD, True)
+        GPIO.output(txD, False)
         mutedD = FALSE
     else:  # mute the music
 #        mixer.music.set_volume(0)
         btn5.configure(image=mutePhoto)
         btn5.configure(style="red.TButton")
-        GPIO.output(txD, False) 
+        GPIO.output(txD, True) 
 #        scale.set(0)
         mutedD = TRUE
 def mute_E():
@@ -140,12 +140,12 @@ def mute_E():
     if mutedE:  # Unmute the music
         btn1.configure(image=speakerPhoto)
         btn1.configure(style="white.TButton")
-        GPIO.output(txE, True)
+        GPIO.output(txE, False)
         mutedE = FALSE
     else:
         btn1.configure(image=headPhoto)
         btn1.configure(style="white.TButton")
-        GPIO.output(txE, False)
+        GPIO.output(txE, True)
         mutedE = TRUE
 
 
