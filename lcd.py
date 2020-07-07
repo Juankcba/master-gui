@@ -2,7 +2,7 @@ from Tkinter import *
 import tkFont
 import ttk 
 import RPi.GPIO as GPIO
-txA= 27
+txA= 37
 txB= 31
 txC= 33
 txD= 35
