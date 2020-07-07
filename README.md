@@ -1,4 +1,4 @@
-# How to install the LCD driver of Raspberry Pi
+
   
 1.)Step1, Install Raspbian official mirror <br>
 ====================================================
