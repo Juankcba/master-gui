@@ -13,6 +13,7 @@ GPIO.setup(txB, GPIO.OUT)
 GPIO.setup(txC, GPIO.OUT)
 GPIO.setup(txD, GPIO.OUT)
 GPIO.setup(txE, GPIO.OUT)
+
 root = Tk()
 root.title("SRT INTERCOM - MASTER CH 10")
 root.config(cursor="none")
