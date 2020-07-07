@@ -30,10 +30,7 @@ root.rowconfigure(2, weight=1)  # make buttons stretch when
 root.rowconfigure(3, weight=1)  # make buttons stretch when
 style = ttk.Style()
 style.configure('.',background ='red')
-#style.map("C.TButton",
- #   foreground=[('pressed', 'white'), ('active', 'white')],
-  #  background=[('pressed', 'green'), ('active', 'green')]
-   # ) 
+
 
 style.map("green.TButton", background = [('!active','green'),('pressed', 'green'), ('active', 'green')])
 style.map("red.TButton",   background = [('!active','red'),('pressed', 'red'), ('active', 'red')])
@@ -46,18 +43,14 @@ root.overrideredirect(False)
 root.attributes('-fullscreen',True)
 root.configure(bg='white')
 
-# adding image (remember image should be PNG and not JPG) 
 img = PhotoImage(file = r"/home/pi/master-gui/image2.png") 
 img1 = img.subsample(1, 1) 
-  
-#root.rowconfigure(1, weight=1)  # make buttons stretch when
-#root.columnconfigure((0,1), weight=1)  # when window is resized
+
 Label(root, image = img1, bg='white').grid(row = 0, column = 0,
        columnspan = 3, rowspan = 1, sticky='EWNS', padx = 0, pady = 0)
 
 
 
-# tkFont.BOLD == 'bold'
 helv14 = tkFont.Font(family='Helvetica', size=14, weight=tkFont.BOLD)
 helv36 = tkFont.Font(family='Helvetica', size=22, weight=tkFont.BOLD)
 
@@ -168,8 +161,6 @@ btn3 = ttk.Button(text='Est 1', image=mutePhoto,command=mute_B,style="red.TButto
 btn4 = ttk.Button(text='Est 1', image=mutePhoto,command=mute_C,style="red.TButton")
 btn5 = ttk.Button(text='Est 1', image=mutePhoto,command=mute_D,style="red.TButton")
 
-#root.rowconfigure((0,1), weight=1)  # make buttons stretch when
-#root.columnconfigure((0,2), weight=1)  # when window is resized
 
 Label1.grid(row=1, column=0, columnspan=1, sticky='EWNS')
 Label2.grid(row=1, column=1, columnspan=1, sticky='EWNS')
@@ -180,14 +171,6 @@ btn2.grid(row=2, column=0, columnspan=1, sticky='EWNS')
 btn3.grid(row=2, column=1, columnspan=1, sticky='EWNS')
 btn4.grid(row=2, column=2, columnspan=1, sticky='EWNS')
 btn5.grid(row=2, column=3, columnspan=1, sticky='EWNS')
-
-# button 1
-#btn1 = ttk.Button(root, text = 'Quit !',style="C.TButton")
-#btn1.grid(row = 0, column = 1, columnspan=2)
-
-# button 2
-#btn6 = ttk.Button(text="Test", style="C.TButton")
-#btn6.grid(row = 0, column = 2, pady = 10, padx = 100)
 
 
 
